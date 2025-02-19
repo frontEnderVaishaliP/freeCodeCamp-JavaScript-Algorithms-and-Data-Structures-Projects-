@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0A0A23;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #FFFFFF;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #1A1A40;
+}
+
+#logo {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#checker {
+  background-color: #2A2A4A;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#checker p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+#text-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #0A0A23;
+}
+
+#check-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #F3B33E;
+  color: #0A0A23;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#check-btn:hover {
+  background-color: #FFCF70;
+}
+
+#result {
+  display: none;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #F3B33E;
+}
+
+#explanation {
+  background-color: #FAEBD7;
+  color: #0A0A23;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #logo {
+    font-size: 1.5rem;
+  }
+
+  #text-input, #check-btn {
+    font-size: 1rem;
+  }
+
+  #explanation {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+} 

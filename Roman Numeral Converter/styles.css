@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #1D1616;
+  color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border: 2px solid white;
+}
+
+.container {
+  /* background-color: #8E1616; */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 5vh;
+  color: #EEEEEE;
+  letter-spacing: 0.1em;
+  padding: 5vh;
+}
+
+#inputContainer{
+  /* border: 1px solid white; */
+  width: 80%;
+  height: 50%;
+  padding: 1vh 2vw;
+  margin: auto auto;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: #8E1616;
+
+}
+
+
+#inputContainer h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #EEEEEE;
+
+}
+
+#number {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 2px solid #D84040;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #EEEEEE;
+  color: #1D1616;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+#convert-btn {
+  background-color: #D84040;
+  color: #EEEEEE;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#convert-btn:hover {
+  background-color: #1D1616;
+}
+
+#output {
+  margin-top: 1vh;
+  color: #EEEEEE;
+  text-align: center;
+  background-color: #8E1616 ;
+  padding: 1vh;
+  width: 80%;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #convert-btn {
+    padding: 12px;
+  }
+}
